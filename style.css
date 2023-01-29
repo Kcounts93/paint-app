@@ -10,7 +10,7 @@ body {
 background: rgb(89, 129, 101);
 }
 
-.container {
+.wrapper {
     background-color: #292929;
     width: 80vmin;
     position: absolute;
