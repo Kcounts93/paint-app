@@ -7,12 +7,13 @@
 }
 
 body {
-background: rgb(89, 129, 101);
+background: #22A39F;
 }
 
 .wrapper {
+    display: flex;
     background-color: #292929;
-    width: 80vmin;
+    width: 90vmin;
     position: absolute;
     transform: translate(-50%, -50%) ;
     top: 50%;
@@ -21,10 +22,33 @@ background: rgb(89, 129, 101);
     border-radius: 8px;
 }
 
+.opt-wrapper {
+    display: flex;
+    flex-direction: column; 
+    padding: 2rem;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
 button {
     background-color: #292929;
     padding: 5px;
-    border: 2px solid rgb(206, 121, 2);
+    border: 2px solid #FF9F29;
+    width: 8rem;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+button:hover {
+    background-color: #ff9f29;
+}
+
+button:active {
+    background-color: #FF9F29;
+    border: 3px solid #292929;
+    box-shadow: none;
 }
 
 label {
@@ -50,14 +74,22 @@ input[type="color"] {
     -moz-appearance:none;
     appearance: none;
     background-color: transparent;
-    width: 70px;
-    height: 40px;
+    width: 8rem;
+    height: 3rem;
     border: none;
     cursor: pointer;
 }
 
+input[type='range'] {
+    color: black;
+}
+input[type="range"]::-moz-range-track {  
+  background-color: #9a905d;
+}
+
 input[type='color']::-webkit-color-swatch {
     border: 3px solid #292929;
+    box-shadow: 1px 1px 5px #000000;
 
 }
 
@@ -68,7 +100,7 @@ input[type='color']::-moz-color-swatch {
 }
 
 .gridCol {
-    border: 1px solid #ddd;
+    border: 1px solid #767676;
     height: 1em;
     width: 1em;
 }
